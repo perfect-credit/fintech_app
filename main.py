@@ -18,8 +18,8 @@ def hello_world():
 
 # Get all the moroccan words
 @app.route('/output', methods=['GET'])
-def returnAll():
-    return jsonify({'message' : 'Output solution'})
+def return_result():
+    return jsonify(extract_receipt_product(SCAN_1))
 
 if __name__ == "__main__":
     app.run(debug=True)
