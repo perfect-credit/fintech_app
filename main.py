@@ -22,4 +22,4 @@ def return_result():
     return jsonify(extract_receipt_product(SCAN_1))
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True) 
